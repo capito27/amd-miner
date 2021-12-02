@@ -19,6 +19,7 @@ jobs:
         run: |
              temp_file=$(mktemp --suffix=.deb)
              curl -L https://github.com/conan-io/conan/releases/latest/download/conan-ubuntu-64.deb -o $temp_file
+             sudo apt install $temp_file
 
       - name: Build miner
         run: ./make.sh
