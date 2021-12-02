@@ -2,7 +2,7 @@
 
 # Bash script to build miner
 
-cd '$(dirname "$0")'
+cd $(dirname "$0")
 
 mkdir -p build
 cd build
